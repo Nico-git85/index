@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lectia 1</title>
+  </head>
+  <body>
+    <h1>ES6 - lecția 1</h1>
+    <script>
+      "use strict";
+      let nume = "Popescu Paul";
+      console.log("Numele meu este " + nume);
+      alert("Salut " + nume + "!");
+      let dataDeAzi = new Date();
+      var nMs = dataDeAzi.getTime();
+      document.write(
+        "<p>Salut, " +
+          nume +
+          "!<br>Au trecut deja " +
+          nMs +
+          "ms de la 1 ianuarie 1970.</p>"
+      );
+      const GALBEN = "#FFFF00";
+      const GRI = "#4B4B4B";
+      const titlu = document.querySelector("h1");
+      titlu.style.background = GALBEN;
+      titlu.style.color = GRI;
+      const paragraf = document.querySelector("p");
+      paragraf.style.background = "purple";
+      paragraf.style.color = "white";
+    </script>
+    <p id="mes"></p>
+    <script>
+      const mode = document.querySelector("#mes");
+      mode.style.background = "blue";
+      mode.style.color = GALBEN;
+      mode.innerHTML = "Mesajul moderatorului sesiunii:";
+    </script>
+  </body>
+</html>
